@@ -1,7 +1,5 @@
-import React from "react";
-
-const Page = () => {
-  return <div></div>;
+const Page = ({ params }: { params: { slugs: string } }) => {
+  return <>{params}</>;
 };
 
 export default Page;

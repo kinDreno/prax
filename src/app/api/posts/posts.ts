@@ -7,6 +7,7 @@ export default async function handler(req : NextApiRequest, res : NextApiRespons
     const { method } = req;
 
     switch (method) {
+        
         case "GET":
             try {
                 const posts = await prisma.post.findMany();
